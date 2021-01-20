@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+body {
+  background: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+/*---------------------------------------
+  TYPOGRAPHY              
+  ---------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  line-height: inherit;
+}
+
+h1 {
+  color: #252525;
+  font-size: 3em;
+  line-height: 50px;
+}
+
+h2 {
+  color: #353535;
+  font-size: 2em;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+h3,
+h3 a {
+  color: #454545;
+}
+
+p {
+  color: #757575;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+/*---------------------------------------
+  NAVBAR             
+--------------------------------------*/
+.custom-navbar {
+  border: none;
+  margin-bottom: 0;
+  padding: 25px 0;
+}
+
+.custom-navbar .navbar-brand {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.custom-navbar .navbar-brand span {
+  color: #ce3232;
+}
+
+.top-nav-collapse {
+  background: #ffffff;
+}
+
+.custom-navbar .navbar-nav.navbar-nav-first {
+  margin-left: 8em;
+}
+
+.custom-navbar .nav.navbar-nav.navbar-nav-first li a {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-right: 22px;
+  padding-left: 22px;
+  text-transform: uppercase;
+}
+
+.custom-navbar .nav.navbar-nav.navbar-nav-first li a:hover {
+  background: transparent;
+  color: #ce3232;
+}
+
+.custom-navbar .nav.navbar-nav.navbar-nav-first > li > a:hover,
+.custom-navbar .nav.navbar-nav.navbar-nav-first > li > a:focus {
+  background-color: transparent;
+}
+
+.custom-navbar .nav.navbar-nav.navbar-nav-first li.active > a {
+  background-color: transparent;
+  color: #ce3232;
+}
+
+.custom-navbar .navbar-toggler {
+  border: none;
+  padding-top: 10px;
+}
+
+.custom-navbar .navbar-toggler {
+  background-color: transparent;
+}
+
+.custom-navbar .navbar-toggler .icon-bar {
+  background: #252525;
+  border-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .custom-navbar {
+    border-bottom: 0;
+    background: 0 0;
+  }
+
+  .custom-navbar.top-nav-collapse {
+    background: #ffffff;
+    -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    padding: 12px 0;
+  }
+
+  .top-nav-collapse .navbar-brand {
+    color: #454545;
+  }
+
+  .top-nav-collapse .nav li a {
+    color: #575757;
+  }
+
+  .top-nav-collapse .nav .section-btn a {
+    color: #ffffff;
+  }
+}
+
+/*---------------------------------------
+  CAROUSEL / HOME        
+--------------------------------------*/
+#home {
+  padding: 0;
+}
+
+#home h1 {
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+
+#home h3 {
+  color: #f9f9f9;
+  font-size: 14px;
+  line-height: inherit;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .slider .col-md-8 {
+    padding-left: 0;
+  }
+}
+
+.carousel-inner .carousel-item .carousel-caption {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  height: 100%;
+  color: #fff;
+  padding: 4em 0 0 2em;
+}
+
+.carousel-inner .carousel-item {
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: cover;
+  height: 650px;
+}
+
+.slider .carousel-inner > .item-first {
+  background-image: url(/images/slider-image1.jpg);
+}
+.slider .carousel-inner > .item-second {
+  background-image: url(/images/slider-image2.jpg);
+}
+.slider .carousel-inner > .item-third {
+  background-image: url(/images/slider-image3.jpg);
+}
+
+/*---------------------------------------
+  ABOUT   
+--------------------------------------*/
+#about {
+  padding-bottom: 0;
+}
+
+.about-info {
+  padding: 0 6em 5em 0;
+}
+
+.about-info .section-title {
+  padding-bottom: 20px;
+}
+
+.about-image {
+  position: absolute;
+}
+/*---------------------------------------
+  GENERAL
+-----------------------------------------*/
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #252525;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none !important;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #ce3232;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: #000000;
+}
+
+.section-title {
+  padding-bottom: 40px;
+}
+
+.section-title h2 {
+  margin: 0;
+}
+
+.section-title h4 {
+  color: #bfbdbd;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  position: relative;
+  padding: 100px 0;
+}
+
+.about-image img,
+.team-thumb img {
+  width: 100%;
+}
+
+#google-map iframe {
+  border: 0;
+  width: 100%;
+  height: 390px;
+}
+
+/*---------------------------------------
+     RESPONSIVE STYLES              
+  -----------------------------------------*/
+
+@media screen and (max-width: 1170px) {
+  .custom-navbar .navbar-nav.navbar-nav-first {
+    margin-left: inherit;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .about-info {
+    padding-right: 0;
+  }
+
+  .about-image {
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  section {
+    padding: 60px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .custom-navbar .nav.navbar-nav.navbar-nav-first li a {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h1,
+  h2,
+  h3 {
+    line-height: normal;
+  }
+
+  .custom-navbar {
+    background: #ffffff;
+    -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .custom-navbar .nav.navbar-nav.navbar-nav-first li a {
+    line-height: normal;
+    padding: 10px;
+  }
+
+  .custom-navbar .navbar-brand,
+  .top-nav-collapse .navbar-brand {
+    color: #252525;
+    font-weight: 600;
+  }
+
+  .custom-navbar .nav.navbar-nav.navbar-nav-first li a,
+  .top-nav-collapse .nav.navbar-nav.navbar-nav-first li a {
+    color: #575757;
+  }
+}
